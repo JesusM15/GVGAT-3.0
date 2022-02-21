@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/icono.png">
+	<link rel="stylesheet" type="text/css" href="../estilos/style.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/test.css">
+	<meta charset="utf-8">
+	<title>GVGAT-test</title>
+	<link rel="canonical" href="#" />
+	<meta name="keywords" content="paginas, web, proyectos, videojuegos, games, minecraft, fortnite, juegos, pc, computadora, telefonos, osu, valorant">
+	<meta name="description" content="Conoce todo acerca de videojuegos incluyendo sus requerimientos minimos y recomendados...">
+	<meta name="author" content="Jesus M">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul class="nav-ul">
+				<div class="nav-li-container">
+					<li class="nav-li">
+						<a href="../index.html" class="nav-link">
+						<i class="fas fa-gamepad nav-icon"></i>
+						GVGAT  
+					    </a>
+				    </li>
+					<li class="nav-li">
+						<a href="juegos.html" class="nav-link">
+                        <i class="fas fa-heart nav-icon"></i>
+						Juegos
+					    </a>
+				    </li>
+				    <li class="nav-li">
+					    <a href="test.html" class="nav-link">
+                            <i class="fas fa-book nav-icon"></i>
+					        Test
+					    </a>
+				    </li>
+				    <li class="nav-li">
+				    	<button class="btn-music">
+				    		<i class="fas fa-play"></i>
+				    	</button>
+				    </li>
+				    	<script type="text/javascript">
+				    		const btnMusic = document.querySelector(".btn-music");
+
+				    		let playing = false;
+				    		var sonido = new Audio();
+
+				    		btnMusic.addEventListener("click", (er)=>{
+                                musicFunction();
+                            });
+
+                            const musicFunction = () =>{
+                            	if (playing == false){
+				    		        sonido.src = "../bgtheme.mp3";
+				    		        sonido.loop = true;
+				    		        sonido.play();
+				    		        playing = true;
+                            	}else{
+                            		sonido.src = "";
+                                    playing = false;
+                            	}
+                            }
+				    	</script>
+				</div>
+			</ul>
+			<ul class="nav-ul-responsive">
+			<div class="nav-button-responsive-container">
+				<button class="nav-responsive-button" id="menu">
+
+				 <i class="fas fa-bars"></i></button>
+			</div>
+			<div class="nav-li-responsive-container">
+				<li class="nav-li-responsive">
+					<a href="../index.html" class="nav-link">
+                    <i class="fas fa-gamepad nav-icon"></i>
+					GVGAT
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="juegos.html" class="nav-link">
+                    <i class="fas fa-heart nav-icon"></i>
+					Juegos
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="test.html" class="nav-link">
+                    <i class="fas fa-book nav-icon"></i>
+					Test
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+				    <button class="btn-music">
+				    	<i class="fas fa-play"></i>
+				    </button>
+				</li>
+			</div>			
+ 			</ul>
+		</nav>
+	</header>
+	<div class="container-test">
+		<h1 class="subtitle text-title">¿Que tanto sabes de Fortnite?</h1>
+		<div class="flex">
+		    <img src="../img/fortniteimg.png" class="img-test" alt="">
+	    </div>
+	<section id="Quiz" class="center">
+			<h3 class="question">1.- ¿Cuanta vida MAXIMA puedes curar con el bidon?</h3>
+			<img src="../img/bidonfort.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta1" id="p11">199
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta1" id="p12">200</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta1" id="p13">100</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta1" id="p14">No tengo idea</p>
+
+           <br><br>
+
+			<h3 class="question">2.- ¿En que temporada la escopeta corredera (PUMP) fue removida?</h3>
+			<img src="../img/pumpfort.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta2" id="p21">Capitulo 3 temporada 1
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta2" id="p22">Capitulo 2 temporada 8</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta2" id="p23">Capitulo 2 temporada 9</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta2" id="p24">Capitulo 2 temporada 7</p>
+
+           <br><br>
+
+			<h3 class="question">3.- ¿De cuantas maneras diferentes puedes editar una pared?</h3>
+			<img src="../img/editfort.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunt3" id="si1">23
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta3" id="si2">24</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta3" id="si3">26</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta3" id="si4">25</p>
+           <br><br>
+
+            <!--pregunta numero 4-->
+			<h3 class="question">4.- Cuantas categorias de rareza hay en Fortnite</h3>
+			<img src="../img/rarezasfor.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta4" id="p31">5
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta4" id="p32">7</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta4" id="p33">6</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta4" id="p34">8</p>
+
+           <br><br>
+
+<!--            pregunta numero 5-->
+			<h3 class="question">5.- ¿Cuanta vida tiene respectivamente la pared de madera, piedra y metal(En ese orden)?</h3>
+			<img src="../img/paredfort.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta5" id="p41">150, 350, 540
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta5" id="p42">150, 300, 450</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta5" id="p43">150, 330, 480</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta5" id="p44">150, 300, 500</p>
+
+           <br><br>
+
+<!--         pregunta numero 6-->
+			<h3 class="question">6.- "La escopeta pesada puede hacer daño a varios jugadores con un solo disparo", ¿Cierto o falso?</h3>
+			<img src="../img/escopetapesada.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta6" id="si11">Falso
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta6" id="si12">Verdadero</p>
+           <br><br>
+
+<!--            pregunta numero 7 -->
+			<h3 class="question">7.- ¿Cuanto es la cantidad de materiales maxima por material en una partida competitiva?</h3>
+			<img src="../img/materiales.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta7" id="p51">500
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta7" id="p52">499</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta7" id="p53">999</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta7" id="p54">900</p>
+
+           <br><br>
+
+<!--            pregunta 8-->	
+		<h3 class="question">8.- ¿Cual de estas armas baja mas en la cabeza?</h3>
+			<img src="../img/armas.png" class="img-test">
+			<div class="boton-divisor">
+		<form style="font:normal 16px sans-serif" class="form-answers">
+
+            <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer">
+        	    <input type="radio" name="pregunta8" id="p61">Pump morada
+           </p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta8" id="p62">Arco dorado(Cualquiera)</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta8" id="p63">Fusil de tirador de cazador</p>
+           <p onclick="this.style.color='#B40BF4'" ondblclick="this.style.color='#fff'" class="answer"><input type="radio" name="pregunta8" id="p64">Pistola de cañon</p>
+
+           <br><br>
+
+           <input type="button" class="aciertos" value=" R E S U L T A D O " onclick="resultado()"/>
+		</div>
+		<br>
+	</div>
+	</section>
+	<script type="text/javascript" src="../scriptjs/testfortnite.js"></script>
+	<script type="text/javascript" src="../scriptjs/menu.js"></script>
+</body>
+</html>
